@@ -535,6 +535,11 @@ config VEXPRESS_SYSCFG
 	  bus. System Configuration interface is one of the possible means
 	  of generating transactions on this bus.
 
+config HARDWARE_INFO
+	tristate "Wingtech Hardware Information support"
+	help
+	  This option enables device driver to initial the hardware info module.
+
 config UID_CPUTIME
 	tristate "Per-UID cpu time statistics"
 	depends on PROFILING
